@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add this CSS for the moving tractor animation */
+@keyframes moveTractor {
+    0% {
+      transform: translateX(-50px); /* Starting position off-screen */
+    }
+    100% {
+      transform: translateX(100vw); /* Move to the far right of the viewport */
+    }
+  }
+  
+  .tractor-animation {
+    animation: moveTractor 2s linear infinite;
+  }
+  
